@@ -4,7 +4,8 @@
     "f_cpu": "160000000L",
     "f_flash": "80000000L",
     "flash_mode": "qio",
-    "mcu": "esp32c6"
+    "mcu": "esp32c6",
+    "extra_flags": "-DUSE_ESP32_VARIANT_ESP32C3"
   },
   "connectivity": [
     "wifi"
