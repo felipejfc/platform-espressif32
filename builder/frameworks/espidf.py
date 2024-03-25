@@ -1617,16 +1617,10 @@ if mmu_page_size != "64KB":
     extra_elf2bin_flags += " --flash-mmu-page-size %s" % mmu_page_size
 
 action = copy.deepcopy(env["BUILDERS"]["ElfToBin"].action)
-<<<<<<< HEAD
-#action.cmd_list = env["BUILDERS"]["ElfToBin"].action.cmd_list.replace(
-#    "-o", "--elf-sha256-offset 0xb0 -o"
-#)
-=======
 
 action.cmd_list = env["BUILDERS"]["ElfToBin"].action.cmd_list.replace(
     "-o", extra_elf2bin_flags + " -o"
 )
->>>>>>> 169b8b2ac35adf0d947942d512788de58865db00
 env["BUILDERS"]["ElfToBin"].action = action
 
 #
