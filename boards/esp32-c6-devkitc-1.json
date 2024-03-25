@@ -5,7 +5,7 @@
     "f_flash": "80000000L",
     "flash_mode": "qio",
     "mcu": "esp32c6",
-    "extra_flags": "-DARDUINO_ESP32C6_DEV -DUSE_ESP32 -DUSE_ESP32_VARIANT_ESP32C3"
+    "extra_flags": "-DARDUINO_ESP32C6_DEV -DUSE_ESP32 -DUSE_ESP32_VARIANT_ESP32C6"
   },
   "connectivity": [
     "wifi"
